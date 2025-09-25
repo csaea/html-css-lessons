@@ -2,21 +2,32 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-color: #f9f9f9;
+    background-color: #FFF8E7;
     color: #333;
+    text-align: center;  /* Centers all inline content */
+}
+
+p, ul, ol, table, form {
+    line-height: 1.6;
+    text-align: left;       /* Left-justify text */
+    max-width: 700px;       /* Or whatever width looks good */
+    margin: 0 auto 1em auto; /* Center block and add some bottom margin */
+}
+ul, ol {
+    padding-left: 20px;     /* Small left indent for bullets/numbers */
 }
 
 /* Headings */
 h1 {
-    color: darkblue;
+    color: #000;
     border-bottom: 2px solid #ccc;
     padding-bottom: 5px;
 }
 h2 {
-    color: darkred;
+    color: #6A0DAD;
 }
 h3 {
-    color: darkgreen;
+    color: #ADAA0D;
 }
 
 /* Paragraphs and links */
@@ -41,7 +52,7 @@ ol {
 
 /* Image */
 img {
-    border: 2px solid #ccc;
+    border: 0px solid #fff;
     border-radius: 8px;
 }
 
@@ -51,6 +62,7 @@ table {
     width: 50%;
     margin-top: 10px;
 }
+
 th, td {
     border: 1px solid #999;
     padding: 8px;
