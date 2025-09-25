@@ -1,0 +1,92 @@
+/* General body style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Headings */
+h1 {
+    color: darkblue;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+h2 {
+    color: darkred;
+}
+h3 {
+    color: darkgreen;
+}
+
+/* Paragraphs and links */
+p {
+    line-height: 1.6;
+}
+a {
+    color: blue;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Lists */
+ul {
+    list-style-type: square;
+}
+ol {
+    list-style-type: decimal;
+}
+
+/* Image */
+img {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+/* Table */
+table {
+    border-collapse: collapse;
+    width: 50%;
+    margin-top: 10px;
+}
+th, td {
+    border: 1px solid #999;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #eee;
+}
+
+/* Form */
+form {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 300px;
+}
+label {
+    display: block;
+    margin-top: 10px;
+}
+input, textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+input[type="submit"] {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+input[type="submit"]:hover {
+    background-color: navy;
+}
