@@ -1,7 +1,7 @@
 # html-css-lessons
 Lessons on the basics of html/css
 
-Install the following extensions:
+In codespaces/vscode, install the following extensions:
 
 - Live Server
 - Prettier
