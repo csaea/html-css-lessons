@@ -8,7 +8,16 @@ body {
 }
 
 /* Headings styles */
-h1, h2, h3 {
+
+h1 {
+    margin: 0 auto 10px auto;
+    display: block;
+    max-width: 700px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h2, h3 {
     margin: 0 auto 10px auto;
     display: block;
     max-width: 700px;
@@ -69,12 +78,7 @@ img {
     display: block;
     margin: 0 auto 1em auto;
 /* Miami Retro neon multi-layer box-shadow */
-box-shadow: 
-    rgba(255, 0, 255, 0.25) 0px 10px 20px,  /* soft neon pink */
-    rgba(0, 255, 255, 0.20) 0px -5px 15px, /* soft neon cyan */
-    rgba(255, 170, 0, 0.15) 0px 4px 6px,   /* subtle orange glow */
-    rgba(255, 0, 255, 0.18) 0px 8px 10px,  /* extra pink layer for depth */
-    rgba(0, 255, 255, 0.12) 0px -2px 5px; /* small cyan highlight */
+box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
 
 /* Tables */
@@ -103,8 +107,9 @@ form {
     border: 2px dashed #FF00FF;
     border-radius: 8px;
     width: 350px;
-    box-shadow: 1px 1px 4px rgba(255,0,255,0.3);
-}
+box-shadow: 
+    rgba(255, 0, 255, 0.3) 3px 3px 6px 0px inset,   /* neon pink shadow */
+    rgba(0, 255, 255, 0.25) -3px -3px 6px 1px inset; /* neon cyan highlight */
 label {
     display: block;
     margin-top: 10px;
