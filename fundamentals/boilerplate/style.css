@@ -1,0 +1,133 @@
+/* General body style */
+body {
+    font-family: 'Courier New', monospace;
+    margin: 20px;
+    background-color: #0B0B2B; /* Deep night blue */
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/* Headings with subtle retro style */
+h1, h2, h3 {
+    margin: 0 auto 10px auto;
+    display: block;
+    max-width: 700px;
+    padding: 10px;
+    border-radius: 5px;
+    /* toned-down text shadow */
+    text-shadow: 1px 1px 2px rgba(255, 0, 255, 0.5);
+}
+
+/* Heading colors */
+h1 {
+    font-size: 2em;
+    color: #FF00FF;
+}
+h2 {
+    font-size: 1.5em;
+    color: #00FFFF;
+}
+h3 {
+    font-size: 1.2em;
+    color: #FFAA00;
+}
+
+/* Paragraphs, lists, tables, forms */
+p, ul, ol, table, form {
+    line-height: 1.6;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto 1em auto;
+    color: #E0E0FF;
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 20px;
+}
+
+/* Links */
+a {
+    color: #FF6EC7;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+    text-shadow: 1px 1px 2px rgba(255,110,199,0.5);
+}
+
+/* Lists styling */
+ul {
+    list-style-type: square;
+}
+ol {
+    list-style-type: decimal;
+}
+
+/* Images */
+img {
+    border: 2px solid #FF00FF;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto 1em auto;
+    box-shadow: 1px 1px 4px rgba(255,0,255,0.3);
+}
+
+/* Tables */
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: 0 auto 10px auto;
+    box-shadow: 1px 1px 4px rgba(0,255,255,0.3);
+    background-color: #1B1B3B;
+}
+th, td {
+    border: 1px solid #555;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #2B2B5B;
+    color: #FFAA00;
+}
+
+/* Form styling */
+form {
+    margin: 20px auto;
+    background-color: #1B1B3B;
+    padding: 15px;
+    border: 2px dashed #FF00FF;
+    border-radius: 8px;
+    width: 350px;
+    box-shadow: 1px 1px 4px rgba(255,0,255,0.3);
+}
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #00FFFF;
+}
+input, textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #0B0B2B;
+    color: #E0E0FF;
+}
+input[type="submit"] {
+    background-color: #FF00FF;
+    color: #0B0B2B;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px rgba(255,0,255,0.3);
+}
+input[type="submit"]:hover {
+    background-color: #FF6EC7;
+    box-shadow: 1px 1px 6px rgba(255,110,199,0.3);
+}
