@@ -1,21 +1,19 @@
 /* General body style */
 body {
-    font-family: 'Courier New', monospace;
+    font-family: 'Courier New', monospace; /* You can change the text font style here */
     margin: 20px;
-    background-color: #0B0B2B; /* Deep night blue */
-    color: #FFFFFF;
-    text-align: center;
+    background-color: #0B0B2B; 
+    color: #FFFFFF; /* This is the default color of text */
+    text-align: center; /* By default, everything is justified to the left of the page. This centers it. */
 }
 
-/* Headings with subtle retro style */
+/* Headings styles */
 h1, h2, h3 {
     margin: 0 auto 10px auto;
     display: block;
     max-width: 700px;
     padding: 10px;
     border-radius: 5px;
-    /* toned-down text shadow */
-    text-shadow: 1px 1px 2px rgba(255, 0, 255, 0.5);
 }
 
 /* Heading colors */
@@ -70,7 +68,13 @@ img {
     border-radius: 8px;
     display: block;
     margin: 0 auto 1em auto;
-    box-shadow: 1px 1px 4px rgba(255,0,255,0.3);
+/* Miami Retro neon multi-layer box-shadow */
+box-shadow: 
+    rgba(255, 0, 255, 0.25) 0px 10px 20px,  /* soft neon pink */
+    rgba(0, 255, 255, 0.20) 0px -5px 15px, /* soft neon cyan */
+    rgba(255, 170, 0, 0.15) 0px 4px 6px,   /* subtle orange glow */
+    rgba(255, 0, 255, 0.18) 0px 8px 10px,  /* extra pink layer for depth */
+    rgba(0, 255, 255, 0.12) 0px -2px 5px; /* small cyan highlight */
 }
 
 /* Tables */
