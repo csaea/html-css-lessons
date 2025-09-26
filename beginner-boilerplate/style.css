@@ -77,8 +77,7 @@ img {
     border-radius: 8px;
     display: block;
     margin: 0 auto 1em auto;
-/* Miami Retro neon multi-layer box-shadow */
-box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px;
 }
 
 /* Tables */
@@ -107,9 +106,9 @@ form {
     border: 2px dashed #FF00FF;
     border-radius: 8px;
     width: 350px;
-box-shadow: 
-    rgba(255, 0, 255, 0.3) 3px 3px 6px 0px inset,   /* neon pink shadow */
-    rgba(0, 255, 255, 0.25) -3px -3px 6px 1px inset; /* neon cyan highlight */
+    box-shadow: 
+        rgba(0, 255, 255, 0.25) -3px -3px 6px 1px; /* neon cyan highlight */
+    }
 label {
     display: block;
     margin-top: 10px;
