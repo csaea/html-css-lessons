@@ -3,7 +3,12 @@ Lessons on the basics of html/css
 
 In codespaces/vscode, install the following extensions:
 
-- Live Server
-- Prettier
+- Live Server (necessary)
 
-To start live server, click the "Go Live" button at the bottom right of VSCode. 
+    - To start Live Server, click the "Go Live" button at the bottom-right of VSCode. 
+
+- Prettier (helpful)
+- Stylelint (helpful)
+- Auto Close Tag (helpful)
+
+
