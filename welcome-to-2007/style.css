@@ -1,0 +1,115 @@
+body {
+    font-family: Verdana, Arial, sans-serif;
+    margin: 0;
+    background-color: #FFF8E7;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #e0e0ff;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #aaa;
+}
+header .banner {
+    max-width: 100%;
+    border-radius: 6px;
+}
+.tagline {
+    font-style: italic;
+    color: #555;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #333;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+nav a:hover {
+    background-color: #555;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+aside {
+    width: 25%;
+    background-color: #f4f4ff;
+    padding: 15px;
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+main {
+    width: 70%;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* Table, Form, Links (keep from old site) */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+th, td {
+    border: 1px solid #999;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #eee;
+}
+
+form {
+    margin-top: 15px;
+}
+input, textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+}
+input[type="submit"] {
+    background-color: darkblue;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+input[type="submit"]:hover {
+    background-color: navy;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 30px;
+    font-size: 0.9em;
+}
