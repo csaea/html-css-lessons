@@ -21,10 +21,14 @@ Use these to experiment with HTML/CSS/JS without installing anything:
 
 * [MDN Web Playground](https://developer.mozilla.org/en-US/play)
 * [CodePen](https://codepen.io/pen/)
+https://htmlcheatsheet.com/html/
+https://htmlcheatsheet.com/css/
 
 ## Study Resources
 
 Follow along these tutorials and lessons to round up your knowledge:
+
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Basic_selectors
 
 * [W3Schools HTML Tutorial](https://www.w3schools.com/html/)
 * [MDN HTML Documentation](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -32,6 +36,7 @@ Follow along these tutorials and lessons to round up your knowledge:
 
 ### Design Principles
 
+* [Coolders Color Generator](https://coolors.co/f4e409-eeba0b-fad19e-a63c06-710000)
 * [Color Supply](https://old.colorsupplyyy.com/app/)
 * [Wireframing Examples](https://www.sketch.com/blog/wireframe-examples/)
 
