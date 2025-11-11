@@ -1,99 +1,102 @@
-/* General body style */
+/* GENERAL BODY STYLE */
 body {
-    font-family: 'Courier New', monospace; /* You can change the text font style here */
-    margin: 20px;
-    background-color: #0B0B2B; 
-    color: #FFFFFF; /* This is the default color of text */
-    text-align: center; /* By default, everything is justified to the left of the page. This centers it. */
+    font-family: 'Courier New', monospace; /* sets a typewriter-style font */
+    margin: 20px; /* adds space around everything (px = pixels, tiny screen units) */
+    /* background-color moved to internal <script> in head as example */
+    /* background-color: #0B0B2B; */
+    color: #ffffff; /* makes all text white */
+    text-align: center; /* centers all text by default */
 }
 
-/* Headings styles */
-
+/* HEADINGS STYLES */
 h1 {
-    margin: 0 auto 10px auto;
-    display: block;
-    max-width: 700px;
-    padding: 10px;
-    border-radius: 5px;
+    margin: 0 auto 10px auto; /* centers it and adds space below */
+    display: block; /* takes full line like a box */
+    max-width: 700px; /* keeps the width from stretching too wide */
+    padding: 10px; /* adds inner spacing */
+    border: 2px solid #ff00ff; /* bright pink border */
+    border-radius: 10px; /* smooth rounded corners */
+    box-shadow: 0 0 15px #ff00ff, 0 4px 10px rgba(0, 0, 0, 0.4); /* outer pink glow + soft dark drop shadow */
 }
+
 
 h2, h3 {
-    margin: 0 auto 10px auto;
-    display: block;
-    max-width: 700px;
-    padding: 10px;
-    border-radius: 5px;
+    margin: 0 auto 10px auto; /* centers them and adds a little space below */
+    display: block; /* makes them block-level */
+    max-width: 700px; /* limits how wide they get */
+    padding: 10px; /* adds space inside */
 }
 
-/* Heading colors */
+/* HEADING COLORS */
 h1 {
-    font-size: 2em;
-    color: #FF00FF;
+    font-size: 2em; /* makes text twice the normal size (em = size relative to current font) */
+    color: #ff00ff; /* bright magenta text */
 }
 h2 {
-    font-size: 1.5em;
-    color: #00FFFF;
+    font-size: 1.5em; /* 1.5 times the normal text size */
+    color: #00ffff; /* bright cyan text */
 }
 h3 {
-    font-size: 1.2em;
-    color: #FFAA00;
+    font-size: 1.2em; /* just a bit bigger than normal text */
+    color: #ffaa00; /* golden-orange text */
 }
 
-/* Paragraphs, lists, tables, forms */
+/* PARAGRAPHS, LISTS, TABLES, FORMS */
 p, ul, ol, table, form {
-    line-height: 1.6;
-    text-align: left;
-    max-width: 700px;
-    margin: 0 auto 1em auto;
-    color: #E0E0FF;
+    line-height: 1.5; /* adds breathing room between lines */
+    text-align: left; /* lines up text on the left */
+    max-width: 700px; /* keeps paragraphs from stretching too wide */
+    margin: 0 auto 1em auto; /* centers and adds space below (em = spacing based on font size) */
+    color: #e0e0ff; /* light bluish text color */
 }
 
-/* Lists */
+/* LISTS */
 ul, ol {
-    padding-left: 20px;
+    padding-left: 20px; /* indents list items a bit (px = pixel units) */
 }
 
-/* Links */
+/* LINKS */
 a {
-    color: #FF6EC7;
-    text-decoration: none;
+    color: #ff6ec7; /* pink link color */
+    text-decoration: none; /* removes underline */
 }
 a:hover {
-    text-decoration: underline;
-    text-shadow: 1px 1px 2px rgba(255,110,199,0.5);
+    text-decoration: underline; /* puts the underline back when hovered */
+    text-shadow: 1px 1px 2px rgba(255,110,199,0.5); /* adds a soft pink glow */
 }
 
-/* Lists styling */
+/* LISTS STYLING */
 ul {
-    list-style-type: square;
+    list-style-type: square; /* square bullets instead of circles */
 }
 ol {
-    list-style-type: decimal;
+    list-style-type: decimal; /* regular numbered list */
 }
 
-/* Images */
+/* IMAGES */
 img {
-    border: 2px solid #FF00FF;
-    border-radius: 8px;
-    display: block;
-    margin: 0 auto 1em auto;
-    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px;
+    border: 2px solid #ff00ff; /* adds a magenta border */
+    border-radius: 8px; /* softens the image corners */
+    display: block; /* makes the image take its own line */
+    margin: 0 auto 1em auto; /* centers the image and adds space below */
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px; /* adds a diagonal pink shadow */
 }
 
-/* Tables */
+/* TABLES */
 table {
-    border-collapse: collapse;
-    width: 60%;
-    margin: 0 auto 10px auto;
-    box-shadow: 1px 1px 4px rgba(0,255,255,0.3);
-    background-color: #1B1B3B;
+    border-collapse: collapse; /* removes space between cell borders */
+    width: 60%; /* makes table 60% of the page width */
+    margin: 0 auto 10px auto; /* centers table with a little space below */
+    box-shadow: -5px 5px rgba(0,255,255,0.3); /* horizontal-vertical-glow; gives a faint cyan shadow */
+    background-color: #1b1b3b; /* dark navy background */
 }
 th, td {
-    border: 1px solid #555;
-    padding: 8px;
-    text-align: left;
+    border: 1px solid #555; /* thin gray borders */
+    padding: 8px; /* adds inner space in cells */
+    text-align: left; /* aligns text to the left */
 }
 th {
-    background-color: #2B2B5B;
-    color: #FFAA00;
+    background-color: #2b2b5b; /* darker header background */
+    color: #ffaa00; /* orange header text */
 }
+
