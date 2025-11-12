@@ -1,38 +1,29 @@
 body {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(215,215,215);
-    color: rgb(39,39,39);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(41, 41, 41);
+    color: #ffffff;
+    margin: 20px;
     text-align: center;
-    font-size: 16px;
 }
 
 h1 {
-    color:rgb(16, 70, 20);
-    text-decoration: underline;
-    background-color:brown;
-    font-size: 3em;
+    background-color: rgb(126, 35, 35);
 }
 
 p, ul, ol, table {
-    text-align: left;
-    max-width: 700px;
-    margin: 0 auto 1em auto;
     line-height: 1.5;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto 1em auto;
 }
 
 ul, ol {
-    padding-left: 180px;
+    padding-left: 20px;
 }
 
 table {
-    color: white;
-    background-color: #1b1b3b;
+    background-color: white;
+    color: black;
     width: 60%;
-    box-shadow: 5px -5px 10px black;
-}
-
-img {
-    border: 2px solid #ff00ff;
-    border-radius: 8px;
-    width: 300px;
+    margin: 0 auto 10px auto;
 }
