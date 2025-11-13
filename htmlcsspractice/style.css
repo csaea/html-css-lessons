@@ -4,6 +4,9 @@ body {
     color: #ffffff;
     margin: 20px;
     text-align: center;
+    cursor: url('cursor.png') 10 10, auto;
+    background-image: url('https://file.garden/ZWlUCY4S7Xz2vypS/archived%20backgrounds/colours/purple/bgpurplecotton.gif');
+    background-repeat: repeat;
 }
 
 h1 {
@@ -18,7 +21,7 @@ p, ul, ol, table {
 }
 
 ul, ol {
-    padding-left: 20px;
+    padding-left: 100px;
 }
 
 table {
@@ -27,3 +30,17 @@ table {
     width: 60%;
     margin: 0 auto 10px auto;
 }
+
+th, td {
+    border: 1px solid black;
+}
+
+
+a:hover {
+    color: green;
+}
+
+img {
+    width: 400px;
+}
+
