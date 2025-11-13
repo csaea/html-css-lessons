@@ -4,9 +4,9 @@ body {
     color: #ffffff;
     margin: 20px;
     text-align: center;
-    cursor: url('cursor.png') 10 10, auto;
-    background-image: url('https://file.garden/ZWlUCY4S7Xz2vypS/archived%20backgrounds/colours/purple/bgpurplecotton.gif');
+    background-image: url("background2.jpg");
     background-repeat: repeat;
+    cursor: url("cursor3.png") 16 16, auto;
 }
 
 h1 {
@@ -32,9 +32,12 @@ table {
 }
 
 th, td {
-    border: 1px solid black;
+    border: 1px dotted black;
 }
 
+a {
+    color: yellow;
+}
 
 a:hover {
     color: green;
@@ -43,4 +46,5 @@ a:hover {
 img {
     width: 400px;
 }
+
 
