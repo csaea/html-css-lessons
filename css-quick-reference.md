@@ -1,7 +1,7 @@
 # **CSS Quick Reference**
 
 Quick reference for practical CSS fundamentals using **external stylesheets**.
-For more detailed documentation, see [W3Schools CSS](https://www.w3schools.com/css/), the [MDN CSS Guide](https://developer.mozilla.org/en-US/docs/Web/CSS), or [TutorialsPoint CSS](https://www.tutorialspoint.com/css/).
+For more detailed documentation, see [W3Schools CSS](https://www.w3schools.com/css/), [MDN CSS Guide](https://developer.mozilla.org/en-US/docs/Web/CSS), or [TutorialsPoint CSS](https://www.tutorialspoint.com/css/).
 
 ---
 
@@ -14,10 +14,8 @@ For more detailed documentation, see [W3Schools CSS](https://www.w3schools.com/c
 * [Boxes and Borders](#boxes-and-borders)
 * [Spacing](#spacing)
 * [Display and Position](#display-and-position)
-* [Flexbox](#flexbox)
 * [Tables and Lists](#tables-and-lists)
 * [Transitions and Shadows](#transitions-and-shadows)
-* [Animations](#animations)
 * [Units and Measurements](#units-and-measurements)
 
 ---
@@ -36,11 +34,11 @@ Link an external stylesheet in the `<head>` of your HTML:
 
 Selectors determine *which elements* CSS rules apply to.
 
-| Selector | Example         | Description                               |
-| -------- | --------------- | ----------------------------------------- |
-| Element  | `p {}`          | Targets all `<p>` elements                |
-| Class    | `.highlight {}` | Targets elements with `class="highlight"` |
-| Group    | `h1, h2, h3 {}` | Targets all listed elements               |
+| Selector | Example     | Description                 |
+| -------- | ----------- | --------------------------- |
+| Element  | `p {}`      | Targets all `<p>` elements  |
+| Group    | `h1, h2 {}` | Targets all listed elements |
+| Class     | .special {} | Targets `class="special"` within an HTML tag |
 
 ---
 
@@ -57,9 +55,9 @@ body {
 | Property          | Example                       | Description                     |
 | ----------------- | ----------------------------- | ------------------------------- |
 | `font-family`     | `font-family: Verdana;`       | Sets font type                  |
+| `color`           | `color: green;`               | Sets text color                  |
 | `font-size`       | `font-size: 16px;`            | Controls text size              |
 | `text-align`      | `text-align: center;`         | Aligns text                     |
-| `text-transform`  | `text-transform: uppercase;`  | Changes letter case             |
 | `letter-spacing`  | `letter-spacing: 2px;`        | Adjusts spacing between letters |
 | `line-height`     | `line-height: 1.5;`           | Adjusts line spacing            |
 | `text-decoration` | `text-decoration: underline;` | Adds underline or line-through  |
@@ -70,23 +68,18 @@ body {
 
 ```css
 body {
-  background-color: bisque;
+  background-color: purple;
 }
 
 header {
   background: linear-gradient(to right, lightblue, white);
-}
-
-section {
-  background-image: url("pattern.png");
-  background-repeat: repeat;
 }
 ```
 
 | Property            | Example                                 | Description                        |
 | ------------------- | --------------------------------------- | ---------------------------------- |
 | `color`             | `color: crimson;`                       | Sets text color                    |
-| `background-color`  | `background-color: beige;`              | Sets background color              |
+| `background-color`  | `background-color: blue;`              | Sets background color              |
 | `background-image`  | `background-image: url('pattern.png');` | Adds background image              |
 | `background-repeat` | `background-repeat: repeat;`            | Tiles image (x and y)              |
 | `background-repeat` | `background-repeat: no-repeat;`         | Displays image once                |
@@ -97,6 +90,8 @@ section {
 ---
 
 ## Boxes and Borders
+
+A `<div>` is a generic container element used to group other HTML elements for styling or layout.
 
 ```css
 div {
@@ -120,8 +115,8 @@ div {
 ## Spacing
 
 ```css
-section {
-  margin: 20px;
+div {
+  margin: 0 auto 1em auto; /* top 0, horizontal center, bottom 1em */
   padding: 15px;
 }
 ```
@@ -133,50 +128,35 @@ section {
 | `margin: auto;` | Centers block element horizontally |                               |
 | `gap`           | `gap: 10px;`                       | Space between flex/grid items |
 
-You can target sides individually:
-`margin-top`, `margin-right`, `margin-bottom`, `margin-left`.
+You can target sides individually: `margin-top`, `margin-right`, `margin-bottom`, `margin-left`.
 
 ---
 
 ## Display and Position
 
 ```css
-header {
+h1 {
   display: block;
   position: fixed;
   top: 0;
   width: 100%;
 }
+
+div {
+  width: 50%;
+  margin: 0 auto 1em auto; /* top 0, horizontal center, bottom 1em */
+  text-align: center;      /* center text inside */
+}
 ```
 
 | Property                         | Example               | Description                  |
 | -------------------------------- | --------------------- | ---------------------------- |
+| `margin`                        | ` margin: 0 auto 1em auto;` | Centers all content of tag    |
 | `display`                        | `display: block;`     | Sets element display type    |
 | `position`                       | `position: relative;` | Controls element positioning |
 | `top`, `left`, `right`, `bottom` | `top: 20px;`          | Positions element            |
 | `z-index`                        | `z-index: 2;`         | Layer order                  |
 | `overflow`                       | `overflow: hidden;`   | Hides overflowing content    |
-
----
-
-## Flexbox
-
-```css
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-```
-
-| Property          | Example         | Description            |
-| ----------------- | --------------- | ---------------------- |
-| `display: flex`   | —               | Enables flexbox layout |
-| `justify-content` | `space-between` | Horizontal alignment   |
-| `align-items`     | `center`        | Vertical alignment     |
-| `flex-direction`  | `column`        | Layout direction       |
-| `flex-wrap`       | `wrap`          | Allows wrapping        |
 
 ---
 
@@ -186,8 +166,8 @@ header {
 table {
   border-collapse: collapse;
   width: 60%;
-  margin: 0 auto;
-  box-shadow: 1px 1px 4px rgba(0, 255, 255, 0.3);
+  margin: 0 auto 1em auto;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.25);
 }
 
 ul {
@@ -195,12 +175,21 @@ ul {
 }
 ```
 
-| Property          | Example                       | Description          |
-| ----------------- | ----------------------------- | -------------------- |
-| `border-collapse` | `collapse`                    | Merges table borders |
-| `list-style-type` | `circle`                      | Defines bullet type  |
-| `text-align`      | `center`                      | Centers cell text    |
-| `box-shadow`      | `1px 1px 4px rgba(0,0,0,0.3)` | Adds drop shadow     |
+| Property          | Example                        | Description          |
+| ----------------- | ------------------------------ | -------------------- |
+| `border-collapse` | `collapse`                     | Merges table borders |
+| `list-style-type` | `circle`                       | Defines bullet type  |
+| `text-align`      | `center`                       | Centers cell text    |
+| `box-shadow`      | `3px 3px 8px rgba(0,0,0,0.25)` | Adds drop shadow     |
+
+**Box-shadow syntax:**
+`box-shadow: [horizontal offset] [vertical offset] [blur radius] [spread radius(optional)] [color];`
+
+* Horizontal → left/right
+* Vertical → up/down
+* Blur → softness
+* Spread → optional, grows/shrinks shadow
+* Color → shadow color
 
 ---
 
@@ -210,42 +199,20 @@ ul {
 button {
   background-color: steelblue;
   color: white;
-  transition: 0.3s;
+  transition: box-shadow 0.3s ease;
 }
 
 button:hover {
   background-color: navy;
-  box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
 }
 ```
 
-| Property     | Example                       | Description          |
-| ------------ | ----------------------------- | -------------------- |
-| `transition` | `transition: all 0.3s ease;`  | Smooth animation     |
-| `box-shadow` | `1px 2px 4px rgba(0,0,0,0.3)` | Adds shadow          |
-| `hover`      | `.btn:hover`                  | Style on mouse hover |
-
----
-
-## Animations
-
-```css
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.box {
-  animation: fadeIn 2s ease-in;
-}
-```
-
-| Property                    | Example                         | Description                  |
-| --------------------------- | ------------------------------- | ---------------------------- |
-| `@keyframes`                | `@keyframes spin { ... }`       | Defines animation steps      |
-| `animation`                 | `animation: fadeIn 2s ease-in;` | Applies animation to element |
-| `animation-delay`           | `animation-delay: 1s;`          | Starts animation after delay |
-| `animation-iteration-count` | `infinite`                      | Loops animation continuously |
+| Property     | Example                        | Description          |
+| ------------ | ------------------------------ | -------------------- |
+| `transition` | `transition: all 0.3s ease;`   | Smooth animation     |
+| `box-shadow` | `4px 4px 12px rgba(0,0,0,0.2)` | Adds shadow          |
+| `hover`      | `button:hover { ... }`         | Style on mouse hover |
 
 ---
 
@@ -264,3 +231,4 @@ button:hover {
 ### More to come as we continue learning CSS in class
 
 *Created by Mr. Harrell*
+

@@ -20,6 +20,10 @@ p, ul, ol, table {
     margin: 0 auto 1em auto;
 }
 
+.bigtext {
+    font-size: 80px;
+}
+
 ul, ol {
     padding-left: 100px;
 }
